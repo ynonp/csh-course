@@ -87,7 +87,7 @@ stop the find and quit.
 Hint: `$!` is the process id of the last started process
 
  
-## Part 8: Environment & Aliases
+## Part 7: Environment & Aliases
 
 1. Create a new directory named: `I have $5`
 2. Create an alias that finds all files larger than 2k but smaller than 5k
@@ -103,7 +103,7 @@ Hint: `$!` is the process id of the last started process
 
 
 
-## Part 9: Awk and Sed
+## Part 8: Awk and Sed
 
 1. Add a blank line after each line of input
 6. Change an existing file, so each line should start with a '> '
