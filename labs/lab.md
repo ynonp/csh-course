@@ -28,7 +28,7 @@
 8. Repeat (6). Did you get an error ?
 9. Fix the error keeping the noclobber option set
 
-## Part 3: Getting Parameters
+## Part 2: Getting Parameters
 
 1. Write a shell script that takes a file name as input and prints the file backwards
 2. Write a shell script that takes two file names as inputs, and replaces their contents.
@@ -36,7 +36,7 @@
 4. Write a shell script that takes a Windows file (lines end with
    `\r\n`) and converts it to a Unix file (lines end with `\n`).
 
-## Part 4: Conditionals
+## Part 3: Conditionals
 
 1. Write a shell script that takes an input argument and tells if it's a string or a number (Hint: try `expr a + 0`)
 2. Write a shell script that takes 3 input arguments and prints out the largest one
@@ -48,7 +48,7 @@ If it's not a file print an error message.
 Upon invocation, script should check `~/TRASH` for files older than 48 hours and delete them (hint: use `find`).
 7. Write a shell script that reads a file name from the user, checks that the file is valid, and lowecases its name. For example, running `lc MyFile` should rename the file `MyFile` to `myfile`.
 
-## Part 5: Loops
+## Part 4: Loops
 1. Write a shell script that takes input as command line arguments and
 prints them out backwards (first argument printed last). Hint: use `eval`
 2. Write a shell script called "wait_for_user" that takes a user name and checks if the user is logged in. If she's not logged in, the script sleeps for 5 seconds and checks again in a loop - until the user logs in.
@@ -58,7 +58,7 @@ prints them out backwards (first argument printed last). Hint: use `eval`
 6. Write a shell script that takes a two file extensions as input (call them ext1 and ext2), and renames all files ending with ext1 to end with ext2. 
 7. write a shell script that takes several file names as inputs, and copies itself to each of the files. don't forget to set execute permissions on the target files.
 
-## Part 6: Getopt and Select
+## Part 5: Getopt and Select
 1. Take the lc shellscript from part 4 (which lowercases a file) and modify it so it asks the user for a file name from all the files in the directory.
 2. Write a shell script that asks the user for a file extension (select from all existing extensions in the directory) and prints how many files in the directory have that extension
 3. Modify the previous script to take the extension using a command line switch. Running example: `count_files -e mp3` should print how many mp3 files are in the directory. Running without the switch should perform the same behaviour as the original script.
@@ -66,7 +66,7 @@ prints them out backwards (first argument printed last). Hint: use `eval`
 
 
 
-## Part 8: Named Pipes
+## Part 6: Named Pipes
 1. Create a named pipe called `bob`
 2. Print out the list of files to the named pipe. Notice ls blocks.
 3. Read the contents of the pipe using cat. Notice ls unblocks.
@@ -81,7 +81,7 @@ stop the find and quit.
 Hint: `$!` is the process id of the last started process
 
  
-## Part 9: Multiple Files
+## Part 7: Multiple Files
 
 1. Write a shell function called sum that returns the sum of its arguments
 2. Write a shell function called countExecutables() that takes a directory name as parameter and returns the number of executable files in that directory.
@@ -107,7 +107,7 @@ Now write another script which uses the functions
 
 5. Write a shell function called `tree` that prints an indented directory tree (without using the `tree` command)
 
-## Part 9: Environment & Aliases
+## Part 8: Environment & Aliases
 
 1. Create a new directory named: `I have $5`
 2. Create an alias that finds all files larger than 2k but smaller than 5k
@@ -123,7 +123,7 @@ Now write another script which uses the functions
 
 
 
-## Part 10: Awk and Sed
+## Part 9: Awk and Sed
 
 1. Add a blank line after each line of input
 6. Change an existing file, so each line should start with a '> '
