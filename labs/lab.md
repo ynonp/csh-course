@@ -49,6 +49,7 @@ If it's not a file print an error message.
 6. Write a `safedel` script. The script takes a file name as command line input, and moves that file to a `~/TRASH` directory instead of deleting it.   
 Upon invocation, script should check `~/TRASH` for files older than 48 hours and delete them (hint: use `find`).
 7. Write a shell script that reads a file name from the user, checks that the file is valid, and lowecases its name. For example, running `lc MyFile` should rename the file `MyFile` to `myfile`.
+8. Write a shell script that prints the sum of its arguments
 
 ## Part 4: Loops
 1. Write a shell script called "wait_for_user" that takes a user name and checks if the user is logged in. If she's not logged in, the script sleeps for 5 seconds and checks again in a loop - until the user logs in.
@@ -86,32 +87,6 @@ stop the find and quit.
 Hint: `$!` is the process id of the last started process
 
  
-## Part 7: Multiple Files
-
-1. Write a shell function called sum that returns the sum of its arguments
-2. Write a shell function called countExecutables() that takes a directory name as parameter and returns the number of executable files in that directory.
-3. Write a shell function that prints out the multiplication table. Function should take a number `n` and print a table sized `n*n`.
-For example, running `mul 5` should produce:
-
-```
-1  2   3   4   5
-2  4   6   8   10
-3  6   9   12  15
-4  8   12  16  20
-5  10  15  20  25
-```
-
-4. Write a shell script that includes the following functions:
-  - `add_contact` takes a name and an email.  
-  - `list_contacts` prints out a list of all available contact details and
-emails
-  - `email_contact` takes a name and some text, and sends the text to the contact's email address (as specified before when the contact was added).  
-
-Use a contacts.txt file to store the data.   
-Now write another script which uses the functions
-
-5. Write a shell function called `tree` that prints an indented directory tree (without using the `tree` command)
-
 ## Part 8: Environment & Aliases
 
 1. Create a new directory named: `I have $5`
