@@ -60,11 +60,13 @@ prints them out backwards (first argument printed last). Hint: use `eval`
 6. Write a shell script that takes a two file extensions as input (call them ext1 and ext2), and renames all files ending with ext1 to end with ext2. 
 7. write a shell script that takes several file names as inputs, and copies itself to each of the files. don't forget to set execute permissions on the target files.
 
-## Part 5: Getopt and Select
-1. Take the lc shellscript from part 4 (which lowercases a file) and modify it so it asks the user for a file name from all the files in the directory.
-2. Write a shell script that asks the user for a file extension (select from all existing extensions in the directory) and prints how many files in the directory have that extension
-3. Modify the previous script to take the extension using a command line switch. Running example: `count_files -e mp3` should print how many mp3 files are in the directory. Running without the switch should perform the same behaviour as the original script.
-4. Write a shell script that takes a file name and a new name, and changes all files with the given name (recursively in all folders) to the new name. The script should accept a boolean switch `-n`. When running with -n it should just print all the mv operations without running them.
+## Part 5: Getopt
+1. Modify script 06 from part 4 to take a switch "-n". If the switch is provided, the script should just print "mv" commands without actually renaming files
+2. Write a script that searches for text inside files. Its input switches determine in which files to look: 
+  * -p to search in "*.pl" files
+  * -t to search in "*.txt" files
+  * -c to search in "*.c, *.cpp and *.h" files
+User can combine multiple switches to search in many file types. If no switch is provided it should search in files with any extension
 
 
 
