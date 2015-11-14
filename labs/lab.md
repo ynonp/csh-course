@@ -1,4 +1,4 @@
-# Unix tcsh Scripts Labs
+# Unix tcsh Labs
 
 ## Part 1: Shell Review
 
@@ -28,30 +28,32 @@
 8. Repeat (6). Did you get an error ?
 9. Fix the error keeping the noclobber option set
 
-## Part 2: Getting Parameters
+## Part 2: Parameters and Variables
 
-1. Write a shell script that takes a file name as input and prints the file backwards
-2. Write a shell script that takes two file names as inputs, and replaces their contents.
+1. Write a shell script that takes a file name as a command line argument and prints the file backwards
+2. Write a shell script that takes two file names as command line arguments, and replaces their contents.
 3. Write a shell script that reads a file name from the user, prints its contents and the number of lines in the file.
 4. Write a shell script that takes a Windows file (lines end with
    `\r\n`) and converts it to a Unix file (lines end with `\n`).
+5. Print a list of all the  file extensions in current folder
+6. Print a list of all the file extensions in the current folder, showing each extension only once
 
 ## Part 3: Conditionals
 
+5. Write a shell script that asks the user for a number, if the user chooses 7 - print "You Win".
 1. Write a shell script that takes an input argument and tells if it's a string or a number (Hint: try `expr a + 0`)
 2. Write a shell script that takes 3 input arguments and prints out the largest one
 3. Write a shell script that reads a name from the user - if that name is an executable program run it, otherwise print its content.
 If it's not a file print an error message.
 4. Write a shell script that takes two file names, and prints the contents of the larger one.
-5. Write a shell script that asks the user for a number, if the user chooses 7 - print "You Win".
 6. Write a `safedel` script. The script takes a file name as command line input, and moves that file to a `~/TRASH` directory instead of deleting it.   
 Upon invocation, script should check `~/TRASH` for files older than 48 hours and delete them (hint: use `find`).
 7. Write a shell script that reads a file name from the user, checks that the file is valid, and lowecases its name. For example, running `lc MyFile` should rename the file `MyFile` to `myfile`.
 
 ## Part 4: Loops
-1. Write a shell script that takes input as command line arguments and
+1. Write a shell script called "wait_for_user" that takes a user name and checks if the user is logged in. If she's not logged in, the script sleeps for 5 seconds and checks again in a loop - until the user logs in.
+2. Write a shell script that takes input as command line arguments and
 prints them out backwards (first argument printed last). Hint: use `eval`
-2. Write a shell script called "wait_for_user" that takes a user name and checks if the user is logged in. If she's not logged in, the script sleeps for 5 seconds and checks again in a loop - until the user logs in.
 3. Write a shell script that reads a file and prints its content double-spaced (adding a blank line after each line)
 4. Write a shell script that reads a file and prints its content with no blank lines.
 5. Write a shell script that reads a file and prints out only the longest line
