@@ -55,7 +55,7 @@ Upon invocation, script should check `~/TRASH` for files older than 48 hours and
 ## Part 4: Loops
 1. Write a shell script called "wait_for_user" that takes a user name and checks if the user is logged in. If she's not logged in, the script sleeps for 5 seconds and checks again in a loop - until the user logs in.
 2. Write a shell script that takes input as command line arguments and
-prints them out backwards (first argument printed last). Hint: use `eval`
+prints them out backwards (first argument printed last).
 3. Write a shell script that reads a file and prints its content double-spaced (adding a blank line after each line)
 4. Write a shell script that reads a file and prints its content with no blank lines.
 5. Write a shell script that reads a file and prints out only the longest line
