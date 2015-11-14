@@ -50,6 +50,7 @@ If it's not a file print an error message.
 Upon invocation, script should check `~/TRASH` for files older than 48 hours and delete them (hint: use `find`).
 7. Write a shell script that reads a file name from the user, checks that the file is valid, and lowecases its name. For example, running `lc MyFile` should rename the file `MyFile` to `myfile`.
 8. Write a shell script that prints the sum of its arguments
+9. Write a shell script that print an indented directory tree (without using tree, find or ls)
 
 ## Part 4: Loops
 1. Write a shell script called "wait_for_user" that takes a user name and checks if the user is logged in. If she's not logged in, the script sleeps for 5 seconds and checks again in a loop - until the user logs in.
