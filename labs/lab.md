@@ -66,6 +66,7 @@ prints them out backwards (first argument printed last). Hint: use `eval`
   * -p to search in "*.pl" files
   * -t to search in "*.txt" files
   * -c to search in "*.c, *.cpp and *.h" files
+
 User can combine multiple switches to search in many file types. If no switch is provided it should search in files with any extension
 
 
