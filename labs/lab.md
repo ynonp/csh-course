@@ -91,15 +91,16 @@ Hint: `$!` is the process id of the last started process
 ## Part 7: Environment & Aliases
 
 1. Create a new directory named: `I have $5`
-2. Create an alias that finds all files larger than 2k but smaller than 5k
-3. Create an alias that finds all directories in /tmp owned by the current user
-4. Create an alias that finds all files modified within the last 4 hours
-5. Create a shell function that finds partial matches of a file name, so you could type: `findpartial txt` to get all files with txt in their name
-6. Create an alias for `cp` that turns it to `cp -i`
-7. Create an alias for `rm` that turns it to `rm -i`
-8. Create an alias that prints how many files exist under current directory
-9. Create an alias that prints how many executable files exist under current directory
-10. Create a shell function that takes a date and prints how many files were modified in that date
+2. Create a .csh script file to set up the following aliases:
+    2. Create an alias that finds all files larger than 2k but smaller than 5k
+    3. Create an alias that finds all directories in /tmp owned by the current user
+    4. Create an alias that finds all files modified within the last 4 hours
+    5. Create an alias that finds partial matches of a file name, so you could type: `findpartial txt` to get all files with txt in their name
+    6. Create an alias for `cp` that turns it to `cp -i`
+    7. Create an alias for `rm` that turns it to `rm -i`
+    8. Create an alias that prints how many files exist under current directory
+    9. Create an alias that prints how many executable files exist under current directory
+    10. Create an alias that takes a date and prints how many files were modified in that date
 
 
 
