@@ -1,37 +1,23 @@
-#!/bin/tcsh -f 
+#!/bin/tcsh -f
+set nonomatch
 
-# Write a shell script that print an indented directory
-# tree (without using tree, find or ls)
+if ( $# == 1 ) exit 0
 
-# Solution:
-# We'll use a recursive script that traverses all paths
-# and prints them indented
-#
+set indent = "$1"
+shift
 
-# prevent tcsh gevald when no match is found
-set nonomatch=1
+repeat $indent echo -n " "
+set indent_2 = `expr $indent + 2`
 
-# Initial indent value is taken as command
-# line arguments or defaults to 0
-if ( $# == 0 ) set argv = (0)
+if ( -f "$1" ) then
+  echo "$1:t"
+else if ( -d "$1" ) then
+  echo "$1"
+  $0 $indent_2 $1/*
+endif
 
-# iterate over all files/dirs in current directory
-# empty dirs are ok too because we have nonomatch
-foreach path (*)
-  # print file names
-  if ( -f "$path" ) then
-    repeat $1 echo -n " "
-    echo $path
-  else if ( -d "$path" ) then
-  # or cd to a directory
-  # and perform the same thing there
-    repeat $1 echo -n " "
-    echo "${path}/"
-    cd $path
-    @ indent = $1 + 2
-    $0 $indent
-    cd ..
-  endif
-end
+$0 $indent $argv[2-]
+
+
 
 
