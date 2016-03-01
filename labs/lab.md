@@ -133,6 +133,9 @@ the above interface should produce two files: first is named en3.info and has th
 
 ## Useful Links
 
+Live Code Examples:
+https://github.com/ynonp/csh-2016-03-01
+
 Csh Book:
 http://star-www.rl.ac.uk/docs/sc4.htx/sc4.html
 
