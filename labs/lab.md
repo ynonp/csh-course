@@ -131,3 +131,16 @@ p2p0: flags=8843<UP,BROADCAST,RUNNING,SIMPLEX,MULTICAST> mtu 2304
 Write a shell script that runs `/sbin/ifconfig` and creates an information file for each network interface. For example
 the above interface should produce two files: first is named en3.info and has the en3 block, and the second is named p2p0.info and has the second block
 
+## Useful Links
+
+Csh Book:
+http://star-www.rl.ac.uk/docs/sc4.htx/sc4.html
+
+Bash Book:
+http://www.tldp.org/LDP/abs/html/index.html
+
+Bash String manipulations:
+http://cliffdailynotes.blogspot.co.il/2009/10/variable-modifiers-in-csh-and-bash-bash.html
+
+Csh / Bash translations:
+http://joelinoff.com/blog/?page_id=235
