@@ -147,3 +147,5 @@ http://cliffdailynotes.blogspot.co.il/2009/10/variable-modifiers-in-csh-and-bash
 
 Csh / Bash translations:
 http://joelinoff.com/blog/?page_id=235
+
+
