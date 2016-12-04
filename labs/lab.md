@@ -33,7 +33,7 @@
 1. Write a shell script that takes a file name as a command line argument and prints its contents backwards (from last line to first). Hint: Use tac
 3. Write a shell script that reads a file name from the user, prints its contents and the number of lines in the file.
    `\r\n`) and converts it to a Unix file (lines end with `\n`).
-5. Print a list of all the  file extensions in current folder
+5. Print a list of all the  file extensions in current folder using only shell builtins (no `cut`, `awk`, `sed`, `grep` or `tr`)
 6. Print a list of all the file extensions in the current folder, showing each extension only once
 7. Write a shell script that finds each directory named `Misc` under current folder recursively and replaces each to the name `Test`. Hint: Use find
 
@@ -59,7 +59,7 @@ prints them out backwards (first argument printed last).
 3. Write a shell script that reads a file and prints its content double-spaced (adding a blank line after each line)
 4. Write a shell script that reads a file and prints its content with no blank lines.
 5. Write a shell script that reads a file and prints out only the longest line
-6. Write a shell script that takes a two file extensions as input (call them ext1 and ext2), and renames all files ending with ext1 to end with ext2. Hint: use `eval`
+6. Write a shell script that takes a two file extensions as input (call them ext1 and ext2), and renames all files ending with ext1 to end with ext2.
 7. write a shell script that takes several file names as inputs, and copies itself to each of the files. don't forget to set execute permissions on the target files.
 
 ## Part 5: Getopt
@@ -112,7 +112,6 @@ Hint: `$!` is the process id of the last started process
 7. Write a shell script that takes a file name as input and performs:
   1. If a line starts with `#`, replace each character with a `-`
   2. For all other lines, replace each character with a `.`
-8. (*) Delete duplicate words from input line
 9. Replace the first and last word in every line
 10. The command `/sbin/ifconfig` prints out information about network interfaces. Here's a sample output for the command:
 <pre><code>
@@ -129,3 +128,21 @@ p2p0: flags=8843<UP,BROADCAST,RUNNING,SIMPLEX,MULTICAST> mtu 2304
 Write a shell script that runs `/sbin/ifconfig` and creates an information file for each network interface. For example
 the above interface should produce two files: first is named en3.info and has the en3 block, and the second is named p2p0.info and has the second block
 
+## Useful Links
+
+Live Code Examples:
+https://github.com/ynonp/csh-2016-03-14
+
+Csh Book:
+http://star-www.rl.ac.uk/docs/sc4.htx/sc4.html
+
+Bash Book:
+http://www.tldp.org/LDP/abs/html/index.html
+
+Bash String manipulations:
+http://cliffdailynotes.blogspot.co.il/2009/10/variable-modifiers-in-csh-and-bash-bash.html
+
+Csh / Bash translations:
+http://joelinoff.com/blog/?page_id=235
+
+-- The End
