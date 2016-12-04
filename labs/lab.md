@@ -38,6 +38,7 @@
 
 ## Part 3: Conditionals
 
+1. Modify 02.csh from previous part so that it CAN take argument from command line. If no argument was passed read from `$<`
 5. Write a shell script that asks the user for a number, if the user chooses 7 - print "You Win".
 1. Write a shell script that takes an input argument and tells if it's a string or a number (Hint: try `expr a + 0`)
 2. Write a shell script that takes 3 input arguments and prints out the largest one
