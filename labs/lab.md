@@ -32,7 +32,6 @@
 
 1. Write a shell script that takes a file name as a command line argument and prints its contents backwards (from last line to first). Hint: Use tac
 3. Write a shell script that reads a file name from the user, prints its contents and the number of lines in the file.
-   `\r\n`) and converts it to a Unix file (lines end with `\n`).
 5. Print a list of all the  file extensions in current folder using only shell builtins (no `cut`, `awk`, `sed`, `grep` or `tr`)
 6. Print a list of all the file extensions in the current folder, showing each extension only once
 7. Write a shell script that finds each directory named `Misc` under current folder recursively and replaces each to the name `Test`. Hint: Use find
