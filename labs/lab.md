@@ -48,18 +48,16 @@ If it's not a file print an error message.
 Upon invocation, script should check `~/TRASH` for files older than 48 hours and delete them (hint: use `find`).
 7. Write a shell script that reads a file name from the user, checks that the file is valid, and lowecases its name. For example, running `lc MyFile` should rename the file `MyFile` to `myfile`.
 8. Write a shell script that prints the sum of its arguments
-9. Write a shell script that print an indented directory tree (without using tree, find or ls)
 10. In windows end-of-line character is \r\n while in unix it's just \n. Write a shell script that takes a file and checks if its line endings are windows or unix (Hint: use xxd)
 
 ## Part 4: Loops
 1. Write a shell script called "wait_for_user" that takes a user name and checks if the user is logged in. If she's not logged in, the script sleeps for 5 seconds and checks again in a loop - until the user logs in.
 2. Write a shell script that takes input as command line arguments and
 prints them out backwards (first argument printed last).
-3. Write a shell script that reads a file and prints its content double-spaced (adding a blank line after each line)
-4. Write a shell script that reads a file and prints its content with no blank lines.
-5. Write a shell script that reads a file and prints out only the longest line
 6. Write a shell script that takes a two file extensions as input (call them ext1 and ext2), and renames all files ending with ext1 to end with ext2.
 7. write a shell script that takes several file names as inputs, and copies itself to each of the files. don't forget to set execute permissions on the target files.
+9. Write a shell script that print an indented directory tree (without using tree, find or ls)
+
 
 ## Part 5: Getopt
 1. Modify script 06 from part 4 to take a switch "-n". If the switch is provided, the script should just print "mv" commands without actually renaming files
@@ -108,7 +106,10 @@ Hint: `$!` is the process id of the last started process
 
 1. Add a blank line after each line of input
 6. Change an existing file, so each line should start with a '> '
-7. Write a shell script that takes a file name as input and performs:
+3. Write a script that reads a file and prints its content double-spaced (adding a blank line after each line)
+4. Write a script that reads a file and prints its content with no blank lines.
+5. Write a script that reads a file and prints out only the longest line
+7. Write a script that takes a file name as input and performs:
   1. If a line starts with `#`, replace each character with a `-`
   2. For all other lines, replace each character with a `.`
 9. Replace the first and last word in every line
