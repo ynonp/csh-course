@@ -23,4 +23,4 @@ find "$trash" -mtime +2 -exec rm {} \;
   
 set fname = `basename "$1"`
 mv "$1" "$trash/$fname"
-
+touch "$trash/$fname"
