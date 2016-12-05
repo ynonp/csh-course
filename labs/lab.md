@@ -61,7 +61,7 @@ prints them out backwards (first argument printed last).
 
 
 ## Part 5: Getopt
-1. Modify script 06 from part 4 to take a switch "-n". If the switch is provided, the script should just print "mv" commands without actually renaming files
+1. Modify script 03 from part 4 to take a switch "-n". If the switch is provided, the script should just print "mv" commands without actually renaming files
 2. Write a script that searches for text inside files. Its input switches determine in which files to look: 
   * `-p` to search in `*.pl` files
   * `-t` to search in `*.txt` files
