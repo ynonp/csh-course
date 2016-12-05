@@ -125,12 +125,12 @@ p2p0: flags=8843<UP,BROADCAST,RUNNING,SIMPLEX,MULTICAST> mtu 2304
         ether 06:38:35:47:96:24
         media: autoselect
         status: inactive
-</pre></code>
+</code></pre>
 Write a shell script that runs `/sbin/ifconfig` and creates an information file for each network interface. For example
 the above interface should produce two files: first is named en3.info and has the en3 block, and the second is named p2p0.info and has the second block
 
 11. Given the following list of people's details:
-```language-text
+<pre><code>
 1,Albert,Wilson,awilson0@w3.org,Male,Egypt
 2,Carol,Dixon,cdixon1@jigsy.com,Female,Philippines
 3,Andrea,Riley,ariley2@si.edu,Female,France
@@ -139,10 +139,10 @@ the above interface should produce two files: first is named en3.info and has th
 6,Sarah,Reyes,sreyes5@sciencedaily.com,Female,China
 7,Diana,Brown,dbrown6@illinois.edu,Female,France
 8,Diana,Jacobs,djacobs7@goo.gl,Female,China
-```
-  1. Print the list organised by country: first country name and then
+</code></pre>
+  * Print the list organised by country: first country name and then
   all people living in that country
-  2. Add a total count line after each country data showing how many
+  * Add a total count line after each country data showing how many
   people live there
 
 ## Useful Links
