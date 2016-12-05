@@ -141,9 +141,18 @@ the above interface should produce two files: first is named en3.info and has th
 8,Diana,Jacobs,djacobs7@goo.gl,Female,China
 </code></pre>
   * Print the list organised by country: first country name and then
-  all people living in that country
+  all people living in that country. For each person print only their email address.
   * Add a total count line after each country data showing how many
   people live there
+
+  demo output:
+  <pre><code>
+    France
+      dbrown6@illinois.edu
+      ariley2@si.edu
+      jwarren3@cnn.com
+      Total: 3
+  </code></pre>
 
 ## Useful Links
 
