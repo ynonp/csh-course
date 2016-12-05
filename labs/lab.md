@@ -107,7 +107,6 @@ Hint: `$!` is the process id of the last started process
 
 1. Add a blank line after each line of input
 6. Change an existing file, so each line should start with a '> '
-3. Write a script that reads a file and prints its content double-spaced (adding a blank line after each line)
 4. Write a script that reads a file and prints its content with no blank lines.
 5. Write a script that reads a file and prints out only the longest line
 7. Write a script that takes a file name as input and performs:
