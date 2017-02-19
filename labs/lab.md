@@ -38,18 +38,20 @@
 
 ## Part 3: Conditionals
 
-1. Modify 02.csh from previous part so that it CAN take argument from command line. If no argument was passed read from `$<`
-5. Write a shell script that asks the user for a number, if the user chooses 7 - print "You Win".
-1. Write a shell script that takes an input argument and tells if it's a string or a number (Hint: try `expr a + 0`)
-2. Write a shell script that takes 3 input arguments and prints out the largest one
-3. Write a shell script that reads a name from the user - if that name is an executable program run it, otherwise print its content.
-If it's not a file print an error message.
-4. Write a shell script that takes two file names, and prints the contents of the larger one.
-6. Write a `safedel` script. The script takes a file name as command line input, and moves that file to a `~/TRASH` directory instead of deleting it.   
-Upon invocation, script should check `~/TRASH` for files older than 48 hours and delete them (hint: use `find`).
+1. Write a shell script that asks the user for a number, if the user chooses 7 - print "You Win".
+2. Modify 02.csh from previous part so that it CAN take argument from command line. If no argument was passed read from `$<`
+3. Write a shell script that takes an input argument and tells if it's a string or a number (Hint: try `expr a + 0`)
+4. Write a shell script that takes 3 input arguments and prints out the largest one
+5. Write a shell script called `eyes` that starts and tracks a single xeyes instance:
+  - Typing `eyes start` starts xeyes and writes the started process id in a file (called eyes.pid). If the file already exists start should not start a new instance.
+  - Typing `eyes stop` checks if an eyes.pid file exists, and if so kills the process and deletes the file. If no eyes.pid file exists stop should do nothing.
+  - Typing `eyes status` checks if eyes.pid file exists. If it does prints "Running", else prints "Not Running".
+  - Make sure `eyes stop` kills only the xeyes instance started by `eyes start`.
+
+6. Write a shell script that takes two file names, and prints the contents of the larger one.
 7. Write a shell script that reads a file name from the user, checks that the file is valid, and lowecases its name. For example, running `lc MyFile` should rename the file `MyFile` to `myfile`.
 8. Write a shell script that prints the sum of its arguments
-10. In windows end-of-line character is \r\n while in unix it's just \n. Write a shell script that takes a file and checks if its line endings are windows or unix (Hint: use xxd)
+9. In windows end-of-line character is \r\n while in unix it's just \n. Write a shell script that takes a file and checks if its line endings are windows or unix (Hint: use xxd)
 
 ## Part 4: Loops
 1. Write a shell script called "wait_for_user" that takes a user name and checks if the user is logged in. If she's not logged in, the script sleeps for 5 seconds and checks again in a loop - until the user logs in.
