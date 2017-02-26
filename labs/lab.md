@@ -35,13 +35,13 @@
 5. Print a list of all the  file extensions in current folder using only shell builtins (no `cut`, `awk`, `sed`, `grep` or `tr`)
 6. Print a list of all the file extensions in the current folder, showing each extension only once
 7. Write a shell script that finds each directory named `Misc` under current folder recursively and replaces each to the name `Test`. Hint: Use find
+8. Write a shell script that takes any number of numeric arguments and prints the largest one
 
 ## Part 3: Conditionals
 
 1. Write a shell script that asks the user for a number, if the user chooses 7 - print "You Win".
 2. Modify 02.csh from previous part so that it CAN take argument from command line. If no argument was passed read from `$<`
 3. Write a shell script that takes an input argument and tells if it's a string or a number (Hint: try `expr a + 0`)
-4. Write a shell script that takes 3 input arguments and prints out the largest one
 5. Write a shell script called `eyes` that starts and tracks a single xeyes instance:
   - Typing `eyes start` starts xeyes and writes the started process id in a file (called eyes.pid). If the file already exists start should not start a new instance.
   - Typing `eyes stop` checks if an eyes.pid file exists, and if so kills the process and deletes the file. If no eyes.pid file exists stop should do nothing.
