@@ -14,7 +14,7 @@
 3. Copy all files and folders starting with a capital letter to a new directory called capitals
 4. Delete all files whose extension is a single letter
 5. Rename both occurences of `Misc` folder to `Test`
-6. Delete all files containing m
+6. Delete all files whose name contains an `m`
 
 ## Part 2: Parameters and Variables
 
