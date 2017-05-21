@@ -16,23 +16,11 @@
 5. Rename both occurences of `Misc` folder to `Test`
 6. Delete all files containing m
 
-***
-
-1. Use `ls` to list all files containing a lowercase letter in their name, AND the nonexistant file named `Hidden`
-2. Now show the same list, but redirect standard output to a file
-3. Now show the same list, but redirect standard error to a file
-4. Combine 2 and 3: Redirect standard output to one file, and standard error to another
-5. Create 3 files: `file1`, `file2`, `file3`
-6. Use `hostname` to write the current host name into `file1`
-7. Prevent file clobbering
-8. Repeat (6). Did you get an error ?
-9. Fix the error keeping the noclobber option set
-
 ## Part 2: Parameters and Variables
 
 1. Write a shell script that takes a file name as a command line argument and prints its contents backwards (from last line to first). Hint: Use tac
 3. Write a shell script that reads a file name from the user, prints its contents and the number of lines in the file.
-5. Print a list of all the  file extensions in current folder using only shell builtins (no `cut`, `awk`, `sed`, `grep` or `tr`)
+5. We can get a list of all file extensions in current directory using: `ls *.* | cut -d. -f2|sort -u`. Find a way to get the same list using only shell builtins (i.e. without `cut`, `awk`, `sed`, `grep` or `tr`)
 6. Print a list of all the file extensions in the current folder, showing each extension only once
 7. Write a shell script that finds each directory named `Misc` under current folder recursively and replaces each to the name `Test`. Hint: Use find
 8. Write a shell script that takes any number of numeric arguments and prints the largest one
