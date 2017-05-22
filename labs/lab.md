@@ -96,14 +96,10 @@ Hint: `$!` is the process id of the last started process
 ## Part 8: Awk and Sed
 
 1. Add a blank line after each line of input
-6. Change an existing file, so each line should start with a '> '
-4. Write a script that reads a file and prints its content with no blank lines.
-5. Write a script that reads a file and prints out only the longest line
-7. Write a script that takes a file name as input and performs:
-  1. If a line starts with `#`, replace each character with a `-`
-  2. For all other lines, replace each character with a `.`
-9. Replace the first and last word in every line
-10. The command `/sbin/ifconfig` prints out information about network interfaces. Here's a sample output for the command:
+2. Change an existing file, so each line should start with a '> '
+3. Write a script that reads a file and prints its content with no blank lines.
+4. Write a script that reads a file and prints out only the longest line
+5. The command `/sbin/ifconfig` prints out information about network interfaces. Here's a sample output for the command:
 <pre><code>
 en3: flags=8963<UP,BROADCAST,SMART,RUNNING,PROMISC,SIMPLEX,MULTICAST> mtu 1500
         options=60<TSO4,TSO6>
@@ -117,6 +113,33 @@ p2p0: flags=8843<UP,BROADCAST,RUNNING,SIMPLEX,MULTICAST> mtu 2304
 </code></pre>
 Write a shell script that runs `/sbin/ifconfig` and creates an information file for each network interface. For example
 the above interface should produce two files: first is named en3.info and has the en3 block, and the second is named p2p0.info and has the second block
+
+6. Given the following output from a git repository log:
+
+```
+33d34b4  (HEAD -> refs/heads/master, tag: refs/tags/v2) FIXED bash header
+06a8ab7         ADD csh header
+adc73ff         ADD postgres support
+c5769c8  (tag: refs/tags/v1)    FIXED linux related deadlock
+56bfafe         ADD Mysql support
+a53848a         ADD new control panel
+779e4fe         FIXED ui bugs
+99066b1         initial file
+```
+
+Write an awk script that writes a nice readable changelog that looks like this:
+
+```
+*** v2
+ -   ADD csh header
+ -   ADD postgres support
+
+*** v1
+ -   ADD Mysql support
+ -   ADD new control panel
+ -   FIXED ui bugs
+ -   initial file
+```
 
 11. Given the following list of people's details:
 <pre><code>
