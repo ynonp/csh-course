@@ -30,13 +30,13 @@
 1. Write a shell script that asks the user for a number, if the user chooses 7 - print "You Win".
 2. Modify 02.csh from previous part so that it CAN take argument from command line. If no argument was passed read from `$<`
 3. Write a shell script that takes an input argument and tells if it's a string or a number (Hint: try `expr a + 0`)
-5. Write a shell script called `eyes` that starts and tracks a single xeyes instance:
-  - Typing `eyes start` starts xeyes and writes the started process id in a file (called eyes.pid). If the file already exists start should not start a new instance.
-  - Typing `eyes stop` checks if an eyes.pid file exists, and if so kills the process and deletes the file. If no eyes.pid file exists stop should do nothing.
-  - Typing `eyes status` checks if eyes.pid file exists. If it does prints "Running", else prints "Not Running".
-  - Make sure `eyes stop` kills only the xeyes instance started by `eyes start`.
+4. Write a shell script called `eyes` that starts and tracks a single xeyes instance:
+    - Typing `eyes start` starts xeyes and writes the started process id in a file (called eyes.pid). If the file already exists start should not start a new instance.
+    - Typing `eyes stop` checks if an eyes.pid file exists, and if so kills the process and deletes the file. If no eyes.pid file exists stop should do nothing.
+    - Typing `eyes status` checks if eyes.pid file exists. If it does prints "Running", else prints "Not Running".
+    - Make sure `eyes stop` kills only the xeyes instance started by `eyes start`.
 
-8. Write a shell script that prints the sum of its arguments
+5. Write a shell script that prints the sum of its arguments
 
 ## Part 4: Loops
 1. Write a shell script called "wait_for_user" that takes a user name and checks if the user is logged in. If she's not logged in, the script sleeps for 5 seconds and checks again in a loop - until the user logs in.
