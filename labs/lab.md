@@ -36,10 +36,7 @@
   - Typing `eyes status` checks if eyes.pid file exists. If it does prints "Running", else prints "Not Running".
   - Make sure `eyes stop` kills only the xeyes instance started by `eyes start`.
 
-6. Write a shell script that takes two file names, and prints the contents of the larger one.
-7. Write a shell script that reads a file name from the user, checks that the file is valid, and lowecases its name. For example, running `lc MyFile` should rename the file `MyFile` to `myfile`.
 8. Write a shell script that prints the sum of its arguments
-9. In windows end-of-line character is \r\n while in unix it's just \n. Write a shell script that takes a file and checks if its line endings are windows or unix (Hint: use xxd)
 
 ## Part 4: Loops
 1. Write a shell script called "wait_for_user" that takes a user name and checks if the user is logged in. If she's not logged in, the script sleeps for 5 seconds and checks again in a loop - until the user logs in.
